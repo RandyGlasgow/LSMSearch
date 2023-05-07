@@ -1,0 +1,17 @@
+{
+  "name": "lsm-search",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts-resolve --minify --clean --legacy-output --sourcemap --dts",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
